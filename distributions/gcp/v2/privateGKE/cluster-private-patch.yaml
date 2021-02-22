@@ -33,6 +33,8 @@ spec:
     #createSubnetwork: true
   # Create the clsuter in the private network we created.
   networkRef:
-    name: name # {"$kpt-set":"name"}
+    external: "" # {"kpt-set":"network-ref-external"}
+    name: name # {"$kpt-set":"network-ref-name"}
   subnetworkRef:
-    name: name # {"$kpt-set":"name"}
+    external: "" # {"kpt-set":"subnetwork-ref-external"}
+    name: name # {"$kpt-set":"subnetwork-ref-name"}

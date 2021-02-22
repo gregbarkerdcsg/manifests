@@ -850,3 +850,36 @@ openAPI:
           values:
           - marker: ${mgmt-project}
             ref: '#/definitions/io.k8s.cli.setters.mgmt-project'
+    io.k8s.cli.setters.network-ref-name:
+      x-k8s-cli:
+        setter:
+          name: network-ref-name
+          value: name
+    io.k8s.cli.setters.network-ref-external:
+      type: string
+      x-k8s-cli:
+        setter:
+          name: network-ref-external
+          value: ""
+    io.k8s.cli.setters.router-ref-name:
+      x-k8s-cli:
+        setter:
+          name: router-ref-name
+          value: name
+    io.k8s.cli.setters.router-ref-external:
+      type: string
+      x-k8s-cli:
+        setter:
+          name: router-ref-external
+          value: ""
+    io.k8s.cli.setters.subnetwork-ref-name:
+      x-k8s-cli:
+        setter:
+          name: subnetwork-ref-name
+          value: name
+    io.k8s.cli.setters.subnetwork-ref-external:
+      type: string
+      x-k8s-cli:
+        setter:
+          name: subnetwork-ref-external
+          value: ""

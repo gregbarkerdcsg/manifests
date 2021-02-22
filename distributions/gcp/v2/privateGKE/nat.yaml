@@ -6,7 +6,8 @@ spec:
   description: Router to allow outbound internet access
   region: REGION # {"$kpt-set":"gcloud.compute.region"}
   networkRef:
-    name: name # {"$kpt-set":"name"}
+    external: "" # {"kpt-set":"network-ref-external"}
+    name: name # {"$kpt-set":"network-ref-name"}
 ---
 apiVersion: compute.cnrm.cloud.google.com/v1beta1
 kind: ComputeRouterNAT
@@ -15,6 +16,7 @@ metadata:
 spec:
   region: REGION # {"$kpt-set":"gcloud.compute.region"}
   routerRef:
-    name: name # {"$kpt-set":"name"}
+    external: "" # {"$kpt-set":"router-ref-external"}
+    name: name # {"$kpt-set":"router-ref-name"}
   natIpAllocateOption: AUTO_ONLY
   sourceSubnetworkIpRangesToNat: ALL_SUBNETWORKS_ALL_IP_RANGES

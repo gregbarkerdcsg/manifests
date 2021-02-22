@@ -13,7 +13,8 @@ spec:
   direction: EGRESS
   priority: 1100
   networkRef:
-    name: name # {"$kpt-set":"name"}
+    external: "" # {"kpt-set":"network-ref-external"}
+    name: name # {"$kpt-set":"network-ref-name"}
   # Enable logging to help debugging
   enableLogging: false # {"$kpt-set":"log-firewalls"}
 ---
@@ -35,7 +36,8 @@ spec:
   - 35.191.0.0/16
   direction: INGRESS
   networkRef:
-    name: name # {"$kpt-set":"name"}
+    external: "" # {"kpt-set":"network-ref-external"}
+    name: name # {"$kpt-set":"network-ref-name"}
   # Enable logging to help debugging
   enableLogging: false # {"$kpt-set":"log-firewalls"}
 ---
@@ -57,7 +59,8 @@ spec:
   - 35.191.0.0/16
   direction: EGRESS
   networkRef:
-    name: name # {"$kpt-set":"name"}
+    external: "" # {"kpt-set":"network-ref-external"}
+    name: name # {"$kpt-set":"network-ref-name"}
   # Enable logging to help debugging
   enableLogging: false # {"$kpt-set":"log-firewalls"}
 ---
@@ -75,7 +78,8 @@ spec:
   - 199.36.153.4/30
   direction: EGRESS
   networkRef:
-    name: name # {"$kpt-set":"name"}
+    external: "" # {"kpt-set":"network-ref-external"}
+    name: name # {"$kpt-set":"network-ref-name"}
   # Enable logging to help debugging
   enableLogging: false # {"$kpt-set":"log-firewalls"}
 ---
@@ -99,7 +103,8 @@ spec:
 
   direction: EGRESS
   networkRef:
-    name: name # {"$kpt-set":"name"}
+    external: "" # {"kpt-set":"network-ref-external"}
+    name: name # {"$kpt-set":"network-ref-name"}
   # Enable logging to help debugging
   enableLogging: false # {"$kpt-set":"log-firewalls"}
 ---
@@ -119,7 +124,8 @@ spec:
   - 192.168.0.0/16
   direction: EGRESS
   networkRef:
-    name: name # {"$kpt-set":"name"}
+    external: "" # {"kpt-set":"network-ref-external"}
+    name: name # {"$kpt-set":"network-ref-name"}
   # Enable logging to help debugging
   enableLogging: false # {"$kpt-set":"log-firewalls"}
 ---
@@ -142,7 +148,8 @@ spec:
   - 172.16.0.32/28
   direction: INGRESS
   networkRef:
-    name: name # {"$kpt-set":"name"}
+    external: "" # {"kpt-set":"network-ref-external"}
+    name: name # {"$kpt-set":"network-ref-name"}
   # Enable logging to help debugging
   enableLogging: false # {"$kpt-set":"log-firewalls"}
 ---
@@ -163,7 +170,8 @@ spec:
   - 172.16.0.32/28
   direction: INGRESS
   networkRef:
-    name: name # {"$kpt-set":"name"}
+    external: "" # {"kpt-set":"network-ref-external"}
+    name: name # {"$kpt-set":"network-ref-name"}
   # Enable logging to help debugging
   enableLogging: false # {"$kpt-set":"log-firewalls"}
 ---
@@ -219,7 +227,8 @@ spec:
   - "13.35.101.104"
   direction: EGRESS
   networkRef:
-    name: name # {"$kpt-set":"name"}
+    external: "" # {"kpt-set":"network-ref-external"}
+    name: name # {"$kpt-set":"network-ref-name"}
   # Enable logging to help debugging
   enableLogging: false # {"$kpt-set":"log-firewalls"}
 ---
@@ -250,6 +259,7 @@ spec:
   - "23.202.231.169"
   direction: EGRESS
   networkRef:
-    name: name # {"$kpt-set":"name"}
+    external: "" # {"kpt-set":"network-ref-external"}
+    name: name # {"$kpt-set":"network-ref-name"}
   # Enable logging to help debugging
   enableLogging: false # {"$kpt-set":"log-firewalls"}
